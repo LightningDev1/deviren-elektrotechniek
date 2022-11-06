@@ -7,7 +7,7 @@ const handlebars = require("handlebars");
 
 function renderTextEmail({ name, email, phone, subject, message }) {
   return `
-  Er is een nieuwe offerte aangemaakt door {name}.
+  Er is een nieuwe offerte aangemaakt door ${name}.
 
   Naam: ${name}
   Email: ${email}
