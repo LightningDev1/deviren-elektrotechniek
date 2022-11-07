@@ -7,7 +7,6 @@ function useThemeMode() {
   const [themeMode, _setThemeMode] = React.useState(currentThemeMode);
 
   React.useEffect(() => {
-
     const onThemeModeChange = (newThemeMode) => {
       _setThemeMode(newThemeMode);
     };
