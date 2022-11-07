@@ -1,8 +1,9 @@
 // POST /api/offerte
 
-const nodemailer = require("nodemailer");
 const path = require("path");
 const fs = require("fs");
+
+const nodemailer = require("nodemailer");
 const handlebars = require("handlebars");
 
 function renderTextEmail({ name, email, phone, subject, message }) {
@@ -67,7 +68,7 @@ export default function handler(req, res) {
     html: renderHTMLEmail(replacements),
   };
 
-  return transporter.sendMail(mailOptions, (error, info) => {
+  return transporter.sendMail(mailOptions, (error, _info) => {
     if (error) {
       console.error(error);
       res.status(500).send({ success: false, message: error.message });
