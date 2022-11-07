@@ -64,7 +64,7 @@ function MainApp({ Component, pageProps }) {
         <title>Deviren Elektrotechniek</title>
         <meta
           name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
+          content="initial-scale=1, width=device-width"
         />
         <link rel="manifest" href="/manifest.json" />
         <meta

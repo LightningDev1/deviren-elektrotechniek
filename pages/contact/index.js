@@ -215,17 +215,6 @@ function ContactCard() {
 function Contact() {
   return (
     <React.Fragment>
-      {/* <Card sx={{ borderRadius: 7 }}>
-        <LazyLoad>
-          <CardMedia
-            component="img"
-            height="300"
-            image={randomChoice(mainImages)}
-            alt=""
-          />
-        </LazyLoad>
-      </Card> */}
-
       <LazyLoad>
         <MainFeaturedPost
           post={{
@@ -237,6 +226,7 @@ function Contact() {
           centerText
         />
       </LazyLoad>
+      
       <Grid container spacing={4} justifyContent="center" marginTop={-15}>
         <Grid item sm={10} md={6} zIndex={10}>
           <ContactCard />
